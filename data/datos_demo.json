@@ -1,0 +1,1076 @@
+{
+  "usuarios": [
+    {
+      "id": "usr_1",
+      "email": "admin@altf4.co",
+      "nombre": "Andrés Galvis",
+      "rol": "Administrador",
+      "activo": true
+    },
+    {
+      "id": "usr_2",
+      "email": "tecnico@altf4.co",
+      "nombre": "Técnico de soporte",
+      "rol": "Técnico",
+      "activo": true
+    }
+  ],
+  "servicios": [
+    {
+      "id": "srv_1",
+      "nombre": "Mantenimiento preventivo",
+      "tarifa": 90000,
+      "duracion": 120
+    },
+    {
+      "id": "srv_2",
+      "nombre": "Mantenimiento correctivo",
+      "tarifa": 120000,
+      "duracion": 180
+    },
+    {
+      "id": "srv_3",
+      "nombre": "Diagnóstico de hardware",
+      "tarifa": 40000,
+      "duracion": 60
+    },
+    {
+      "id": "srv_4",
+      "nombre": "Optimización de sistema operativo",
+      "tarifa": 70000,
+      "duracion": 90
+    },
+    {
+      "id": "srv_5",
+      "nombre": "Ensamble de equipo",
+      "tarifa": 150000,
+      "duracion": 240
+    },
+    {
+      "id": "srv_6",
+      "nombre": "Eliminación de malware",
+      "tarifa": 80000,
+      "duracion": 90
+    }
+  ],
+  "clientes": [
+    {
+      "id": "cli_1",
+      "tipo": "Microempresa",
+      "nombre": "Papelería y Variedades El Centro",
+      "documento": "901234567-1",
+      "telefono": "3104567890",
+      "email": "papeleriacentro@correo.co",
+      "direccion": "Av. 5 # 10-21, Centro",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-06-03",
+      "creado": "2026-06-03T10:00:00.000Z"
+    },
+    {
+      "id": "cli_2",
+      "tipo": "Profesional independiente",
+      "nombre": "Laura Méndez — Contadora",
+      "documento": "1090456789",
+      "telefono": "3157894561",
+      "email": "lmendez.contadora@correo.co",
+      "direccion": "Calle 11 # 3-45, Quinta Oriental",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-06-12",
+      "creado": "2026-06-12T10:00:00.000Z"
+    },
+    {
+      "id": "cli_3",
+      "tipo": "Microempresa",
+      "nombre": "Confecciones Norte S.A.S.",
+      "documento": "900765432-4",
+      "telefono": "6075712345",
+      "email": "admin@confeccionesnorte.co",
+      "direccion": "Zona Industrial, Bodega 12",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-06-21",
+      "creado": "2026-06-21T10:00:00.000Z"
+    },
+    {
+      "id": "cli_4",
+      "tipo": "Residencial",
+      "nombre": "Carlos Ramírez",
+      "documento": "88234567",
+      "telefono": "3201239876",
+      "email": "carlos.r@correo.co",
+      "direccion": "Barrio La Riviera, Mz 4 Casa 8",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-06-30",
+      "creado": "2026-06-30T10:00:00.000Z"
+    },
+    {
+      "id": "cli_5",
+      "tipo": "Microempresa",
+      "nombre": "Droguería Salud Total Los Patios",
+      "documento": "901998877-2",
+      "telefono": "3176543210",
+      "email": "drogueriasalud@correo.co",
+      "direccion": "Av. 10 # 25-30, Los Patios",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-07-09",
+      "creado": "2026-07-09T10:00:00.000Z"
+    },
+    {
+      "id": "cli_6",
+      "tipo": "Profesional independiente",
+      "nombre": "Estudio de Diseño Pixel",
+      "documento": "1093765432",
+      "telefono": "3009876543",
+      "email": "hola@estudiopixel.co",
+      "direccion": "Calle 14 # 0-56, Caobos",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-07-18",
+      "creado": "2026-07-18T10:00:00.000Z"
+    },
+    {
+      "id": "cli_7",
+      "tipo": "Microempresa",
+      "nombre": "Ferretería La Esperanza",
+      "documento": "900112233-5",
+      "telefono": "3112223344",
+      "email": "ferreesperanza@correo.co",
+      "direccion": "Av. 7 # 2-15, Villa del Rosario",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-07-27",
+      "creado": "2026-07-27T10:00:00.000Z"
+    },
+    {
+      "id": "cli_8",
+      "tipo": "Residencial",
+      "nombre": "Diana Contreras",
+      "documento": "1092345678",
+      "telefono": "3045556677",
+      "email": "diana.c@correo.co",
+      "direccion": "Conjunto Prados del Este, Torre 3",
+      "consentimiento": true,
+      "fechaConsentimiento": "2026-08-05",
+      "creado": "2026-08-05T10:00:00.000Z"
+    }
+  ],
+  "equipos": [
+    {
+      "id": "eq_1",
+      "clienteId": "cli_1",
+      "tipo": "Escritorio",
+      "marca": "Lenovo",
+      "modelo": "ThinkCentre M70",
+      "serial": "LNV-8821A",
+      "so": "Windows 10 Pro",
+      "ram": "8 GB",
+      "almacenamiento": "HDD 1 TB"
+    },
+    {
+      "id": "eq_2",
+      "clienteId": "cli_1",
+      "tipo": "Impresora",
+      "marca": "Epson",
+      "modelo": "L3250",
+      "serial": "EPS-55120",
+      "so": "—",
+      "ram": "—",
+      "almacenamiento": "—"
+    },
+    {
+      "id": "eq_3",
+      "clienteId": "cli_2",
+      "tipo": "Portátil",
+      "marca": "HP",
+      "modelo": "ProBook 440 G8",
+      "serial": "HPB-44081",
+      "so": "Windows 11 Pro",
+      "ram": "16 GB",
+      "almacenamiento": "SSD 512 GB"
+    },
+    {
+      "id": "eq_4",
+      "clienteId": "cli_3",
+      "tipo": "Escritorio",
+      "marca": "Dell",
+      "modelo": "OptiPlex 3080",
+      "serial": "DLL-30801",
+      "so": "Windows 10 Pro",
+      "ram": "8 GB",
+      "almacenamiento": "HDD 500 GB"
+    },
+    {
+      "id": "eq_5",
+      "clienteId": "cli_3",
+      "tipo": "Escritorio",
+      "marca": "Dell",
+      "modelo": "OptiPlex 3080",
+      "serial": "DLL-30802",
+      "so": "Windows 10 Pro",
+      "ram": "8 GB",
+      "almacenamiento": "HDD 500 GB"
+    },
+    {
+      "id": "eq_6",
+      "clienteId": "cli_4",
+      "tipo": "Portátil",
+      "marca": "Asus",
+      "modelo": "VivoBook 15",
+      "serial": "ASU-15X09",
+      "so": "Windows 11 Home",
+      "ram": "8 GB",
+      "almacenamiento": "SSD 256 GB"
+    },
+    {
+      "id": "eq_7",
+      "clienteId": "cli_5",
+      "tipo": "Todo en uno",
+      "marca": "HP",
+      "modelo": "22-dd0010la",
+      "serial": "HPA-22D10",
+      "so": "Windows 10 Home",
+      "ram": "4 GB",
+      "almacenamiento": "HDD 1 TB"
+    },
+    {
+      "id": "eq_8",
+      "clienteId": "cli_6",
+      "tipo": "Escritorio",
+      "marca": "Ensamblado",
+      "modelo": "Ryzen 7 / RTX 3060",
+      "serial": "ALT-ENS-001",
+      "so": "Windows 11 Pro",
+      "ram": "32 GB",
+      "almacenamiento": "NVMe 1 TB"
+    },
+    {
+      "id": "eq_9",
+      "clienteId": "cli_7",
+      "tipo": "Escritorio",
+      "marca": "Compumax",
+      "modelo": "Blackbox",
+      "serial": "CMX-77310",
+      "so": "Windows 10 Pro",
+      "ram": "4 GB",
+      "almacenamiento": "HDD 500 GB"
+    },
+    {
+      "id": "eq_10",
+      "clienteId": "cli_8",
+      "tipo": "Portátil",
+      "marca": "Acer",
+      "modelo": "Aspire 5",
+      "serial": "ACR-A5133",
+      "so": "Windows 11 Home",
+      "ram": "8 GB",
+      "almacenamiento": "SSD 512 GB"
+    }
+  ],
+  "repuestos": [
+    {
+      "id": "rep_1",
+      "codigo": "SSD-480",
+      "nombre": "Unidad SSD SATA 480 GB",
+      "categoria": "Almacenamiento",
+      "stock": 6,
+      "stockMinimo": 3,
+      "costo": 105000,
+      "precioVenta": 160000,
+      "proveedor": "Distribuidora TecnoNorte"
+    },
+    {
+      "id": "rep_2",
+      "codigo": "SSD-NV1T",
+      "nombre": "Unidad SSD NVMe 1 TB",
+      "categoria": "Almacenamiento",
+      "stock": 2,
+      "stockMinimo": 2,
+      "costo": 210000,
+      "precioVenta": 290000,
+      "proveedor": "Distribuidora TecnoNorte"
+    },
+    {
+      "id": "rep_3",
+      "codigo": "RAM-D4-8",
+      "nombre": "Memoria RAM DDR4 8 GB 3200",
+      "categoria": "Memoria",
+      "stock": 8,
+      "stockMinimo": 4,
+      "costo": 85000,
+      "precioVenta": 130000,
+      "proveedor": "Importadora Digital"
+    },
+    {
+      "id": "rep_4",
+      "codigo": "RAM-SO-8",
+      "nombre": "Memoria SODIMM DDR4 8 GB",
+      "categoria": "Memoria",
+      "stock": 3,
+      "stockMinimo": 4,
+      "costo": 90000,
+      "precioVenta": 135000,
+      "proveedor": "Importadora Digital"
+    },
+    {
+      "id": "rep_5",
+      "codigo": "PST-MX4",
+      "nombre": "Pasta térmica Arctic MX-4 4 g",
+      "categoria": "Consumibles",
+      "stock": 14,
+      "stockMinimo": 5,
+      "costo": 22000,
+      "precioVenta": 35000,
+      "proveedor": "Electrónica Cúcuta"
+    },
+    {
+      "id": "rep_6",
+      "codigo": "FAN-LAP",
+      "nombre": "Ventilador / disipador de CPU (genérico)",
+      "categoria": "Refrigeración",
+      "stock": 4,
+      "stockMinimo": 2,
+      "costo": 35000,
+      "precioVenta": 60000,
+      "proveedor": "Electrónica Cúcuta"
+    },
+    {
+      "id": "rep_7",
+      "codigo": "FTE-500",
+      "nombre": "Fuente de poder 500 W 80+",
+      "categoria": "Energía",
+      "stock": 3,
+      "stockMinimo": 2,
+      "costo": 140000,
+      "precioVenta": 200000,
+      "proveedor": "Distribuidora TecnoNorte"
+    },
+    {
+      "id": "rep_8",
+      "codigo": "BAT-HP-440",
+      "nombre": "Batería HP ProBook 440",
+      "categoria": "Energía",
+      "stock": 1,
+      "stockMinimo": 1,
+      "costo": 160000,
+      "precioVenta": 230000,
+      "proveedor": "Importadora Digital"
+    },
+    {
+      "id": "rep_9",
+      "codigo": "TEC-USB",
+      "nombre": "Teclado USB en español",
+      "categoria": "Periféricos",
+      "stock": 10,
+      "stockMinimo": 3,
+      "costo": 25000,
+      "precioVenta": 40000,
+      "proveedor": "Electrónica Cúcuta"
+    },
+    {
+      "id": "rep_10",
+      "codigo": "CBL-SATA",
+      "nombre": "Cable SATA III",
+      "categoria": "Cables",
+      "stock": 20,
+      "stockMinimo": 5,
+      "costo": 4000,
+      "precioVenta": 8000,
+      "proveedor": "Electrónica Cúcuta"
+    },
+    {
+      "id": "rep_11",
+      "codigo": "ALC-ISO",
+      "nombre": "Alcohol isopropílico 500 ml",
+      "categoria": "Consumibles",
+      "stock": 2,
+      "stockMinimo": 3,
+      "costo": 18000,
+      "precioVenta": 26000,
+      "proveedor": "Electrónica Cúcuta"
+    },
+    {
+      "id": "rep_12",
+      "codigo": "PIL-CR2032",
+      "nombre": "Pila CMOS CR2032",
+      "categoria": "Energía",
+      "stock": 15,
+      "stockMinimo": 5,
+      "costo": 2500,
+      "precioVenta": 6000,
+      "proveedor": "Electrónica Cúcuta"
+    }
+  ],
+  "ordenes": [
+    {
+      "id": "ord_1",
+      "consecutivo": "OS-2026-0001",
+      "clienteId": "cli_1",
+      "equipoId": "eq_1",
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Entregado",
+      "diagnostico": "Equipo con temperatura de CPU de 89 °C en carga y polvo acumulado.",
+      "fechaIngreso": "2026-06-13",
+      "fechaEntrega": "2026-06-15",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_5",
+          "cantidad": 1,
+          "precioUnit": 35000
+        }
+      ],
+      "manoObra": 90000,
+      "descuento": 0,
+      "checklist": {
+        "Limpieza interna con aire comprimido": true,
+        "Cambio de pasta térmica del procesador": true,
+        "Revisión de ventiladores y disipadores": true,
+        "Diagnóstico S.M.A.R.T. del disco (CrystalDiskInfo)": true,
+        "Prueba de memoria RAM (MemTest86)": true,
+        "Monitoreo de temperaturas (HWMonitor)": true,
+        "Actualización del sistema operativo y controladores": true,
+        "Análisis antivirus / antimalware": true,
+        "Limpieza de archivos temporales y programas de inicio": true,
+        "Verificación de copia de seguridad del cliente": true
+      },
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-06-13T09:00:00.000Z",
+      "totales": {
+        "repuestos": 35000,
+        "manoObra": 90000,
+        "subtotal": 125000,
+        "descuento": 0,
+        "base": 125000,
+        "iva": 23750,
+        "total": 148750
+      }
+    },
+    {
+      "id": "ord_2",
+      "consecutivo": "OS-2026-0002",
+      "clienteId": "cli_3",
+      "equipoId": "eq_4",
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Entregado",
+      "diagnostico": "Disco HDD con sectores reasignados (S.M.A.R.T. en estado de precaución). Se migra a SSD.",
+      "fechaIngreso": "2026-07-03",
+      "fechaEntrega": "2026-07-07",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_1",
+          "cantidad": 1,
+          "precioUnit": 160000
+        },
+        {
+          "repuestoId": "rep_10",
+          "cantidad": 1,
+          "precioUnit": 8000
+        }
+      ],
+      "manoObra": 120000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-07-03T09:00:00.000Z",
+      "totales": {
+        "repuestos": 168000,
+        "manoObra": 120000,
+        "subtotal": 288000,
+        "descuento": 0,
+        "base": 288000,
+        "iva": 54720,
+        "total": 342720
+      }
+    },
+    {
+      "id": "ord_3",
+      "consecutivo": "OS-2026-0003",
+      "clienteId": "cli_3",
+      "equipoId": "eq_5",
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Entregado",
+      "diagnostico": "Mantenimiento programado. Sin fallas críticas.",
+      "fechaIngreso": "2026-07-04",
+      "fechaEntrega": "2026-07-05",
+      "tecnico": "Técnico de soporte",
+      "repuestos": [
+        {
+          "repuestoId": "rep_5",
+          "cantidad": 1,
+          "precioUnit": 35000
+        }
+      ],
+      "manoObra": 90000,
+      "descuento": 0,
+      "checklist": {
+        "Limpieza interna con aire comprimido": true,
+        "Cambio de pasta térmica del procesador": true,
+        "Revisión de ventiladores y disipadores": true,
+        "Diagnóstico S.M.A.R.T. del disco (CrystalDiskInfo)": true,
+        "Prueba de memoria RAM (MemTest86)": true,
+        "Monitoreo de temperaturas (HWMonitor)": true,
+        "Actualización del sistema operativo y controladores": true,
+        "Análisis antivirus / antimalware": true,
+        "Limpieza de archivos temporales y programas de inicio": true,
+        "Verificación de copia de seguridad del cliente": true
+      },
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-07-04T09:00:00.000Z",
+      "totales": {
+        "repuestos": 35000,
+        "manoObra": 90000,
+        "subtotal": 125000,
+        "descuento": 0,
+        "base": 125000,
+        "iva": 23750,
+        "total": 148750
+      }
+    },
+    {
+      "id": "ord_4",
+      "consecutivo": "OS-2026-0004",
+      "clienteId": "cli_2",
+      "equipoId": "eq_3",
+      "tipoServicio": "Optimización de sistema operativo",
+      "estado": "Entregado",
+      "diagnostico": "Arranque lento (2 min 40 s) por 23 programas de inicio.",
+      "fechaIngreso": "2026-07-23",
+      "fechaEntrega": "2026-07-24",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [],
+      "manoObra": 70000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-07-23T09:00:00.000Z",
+      "totales": {
+        "repuestos": 0,
+        "manoObra": 70000,
+        "subtotal": 70000,
+        "descuento": 0,
+        "base": 70000,
+        "iva": 13300,
+        "total": 83300
+      }
+    },
+    {
+      "id": "ord_5",
+      "consecutivo": "OS-2026-0005",
+      "clienteId": "cli_5",
+      "equipoId": "eq_7",
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Entregado",
+      "diagnostico": "Equipo con 4 GB de RAM insuficientes y disco mecánico lento.",
+      "fechaIngreso": "2026-08-17",
+      "fechaEntrega": "2026-08-22",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_3",
+          "cantidad": 1,
+          "precioUnit": 130000
+        },
+        {
+          "repuestoId": "rep_1",
+          "cantidad": 1,
+          "precioUnit": 160000
+        }
+      ],
+      "manoObra": 120000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-08-17T09:00:00.000Z",
+      "totales": {
+        "repuestos": 290000,
+        "manoObra": 120000,
+        "subtotal": 410000,
+        "descuento": 0,
+        "base": 410000,
+        "iva": 77900,
+        "total": 487900
+      }
+    },
+    {
+      "id": "ord_6",
+      "consecutivo": "OS-2026-0006",
+      "clienteId": "cli_6",
+      "equipoId": "eq_8",
+      "tipoServicio": "Ensamble de equipo",
+      "estado": "Entregado",
+      "diagnostico": "Ensamble de estación de diseño gráfico según cotización aprobada.",
+      "fechaIngreso": "2026-09-01",
+      "fechaEntrega": "2026-09-04",
+      "tecnico": "Técnico de soporte",
+      "repuestos": [
+        {
+          "repuestoId": "rep_2",
+          "cantidad": 1,
+          "precioUnit": 290000
+        },
+        {
+          "repuestoId": "rep_7",
+          "cantidad": 1,
+          "precioUnit": 200000
+        }
+      ],
+      "manoObra": 150000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-09-01T09:00:00.000Z",
+      "totales": {
+        "repuestos": 490000,
+        "manoObra": 150000,
+        "subtotal": 640000,
+        "descuento": 0,
+        "base": 640000,
+        "iva": 121600,
+        "total": 761600
+      }
+    },
+    {
+      "id": "ord_7",
+      "consecutivo": "OS-2026-0007",
+      "clienteId": "cli_4",
+      "equipoId": "eq_6",
+      "tipoServicio": "Eliminación de malware",
+      "estado": "Entregado",
+      "diagnostico": "Navegador con extensiones maliciosas y publicidad emergente.",
+      "fechaIngreso": "2026-09-21",
+      "fechaEntrega": "2026-09-22",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [],
+      "manoObra": 80000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-09-21T09:00:00.000Z",
+      "totales": {
+        "repuestos": 0,
+        "manoObra": 80000,
+        "subtotal": 80000,
+        "descuento": 0,
+        "base": 80000,
+        "iva": 15200,
+        "total": 95200
+      }
+    },
+    {
+      "id": "ord_8",
+      "consecutivo": "OS-2026-0008",
+      "clienteId": "cli_7",
+      "equipoId": "eq_9",
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Entregado",
+      "diagnostico": "Equipo no arranca: pila CMOS agotada y módulo de RAM defectuoso.",
+      "fechaIngreso": "2026-10-06",
+      "fechaEntrega": "2026-10-10",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_3",
+          "cantidad": 1,
+          "precioUnit": 130000
+        },
+        {
+          "repuestoId": "rep_12",
+          "cantidad": 1,
+          "precioUnit": 6000
+        }
+      ],
+      "manoObra": 120000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-10-06T09:00:00.000Z",
+      "totales": {
+        "repuestos": 136000,
+        "manoObra": 120000,
+        "subtotal": 256000,
+        "descuento": 0,
+        "base": 256000,
+        "iva": 48640,
+        "total": 304640
+      }
+    },
+    {
+      "id": "ord_9",
+      "consecutivo": "OS-2026-0009",
+      "clienteId": "cli_8",
+      "equipoId": "eq_10",
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Entregado",
+      "diagnostico": "Mantenimiento preventivo semestral.",
+      "fechaIngreso": "2026-10-21",
+      "fechaEntrega": "2026-10-22",
+      "tecnico": "Técnico de soporte",
+      "repuestos": [
+        {
+          "repuestoId": "rep_5",
+          "cantidad": 1,
+          "precioUnit": 35000
+        }
+      ],
+      "manoObra": 90000,
+      "descuento": 0,
+      "checklist": {
+        "Limpieza interna con aire comprimido": true,
+        "Cambio de pasta térmica del procesador": true,
+        "Revisión de ventiladores y disipadores": true,
+        "Diagnóstico S.M.A.R.T. del disco (CrystalDiskInfo)": true,
+        "Prueba de memoria RAM (MemTest86)": true,
+        "Monitoreo de temperaturas (HWMonitor)": true,
+        "Actualización del sistema operativo y controladores": true,
+        "Análisis antivirus / antimalware": true,
+        "Limpieza de archivos temporales y programas de inicio": true,
+        "Verificación de copia de seguridad del cliente": true
+      },
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-10-21T09:00:00.000Z",
+      "totales": {
+        "repuestos": 35000,
+        "manoObra": 90000,
+        "subtotal": 125000,
+        "descuento": 0,
+        "base": 125000,
+        "iva": 23750,
+        "total": 148750
+      }
+    },
+    {
+      "id": "ord_10",
+      "consecutivo": "OS-2026-0010",
+      "clienteId": "cli_1",
+      "equipoId": "eq_2",
+      "tipoServicio": "Diagnóstico de hardware",
+      "estado": "Entregado",
+      "diagnostico": "Impresora con atasco recurrente; se limpia rodillo de arrastre.",
+      "fechaIngreso": "2026-10-31",
+      "fechaEntrega": "2026-11-01",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [],
+      "manoObra": 40000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-10-31T09:00:00.000Z",
+      "totales": {
+        "repuestos": 0,
+        "manoObra": 40000,
+        "subtotal": 40000,
+        "descuento": 0,
+        "base": 40000,
+        "iva": 7600,
+        "total": 47600
+      }
+    },
+    {
+      "id": "ord_11",
+      "consecutivo": "OS-2026-0011",
+      "clienteId": "cli_2",
+      "equipoId": "eq_3",
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Entregado",
+      "diagnostico": "Batería con 38 % de salud; se reemplaza.",
+      "fechaIngreso": "2026-11-08",
+      "fechaEntrega": "2026-11-12",
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_8",
+          "cantidad": 1,
+          "precioUnit": 230000
+        }
+      ],
+      "manoObra": 120000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-11-08T09:00:00.000Z",
+      "totales": {
+        "repuestos": 230000,
+        "manoObra": 120000,
+        "subtotal": 350000,
+        "descuento": 0,
+        "base": 350000,
+        "iva": 66500,
+        "total": 416500
+      }
+    },
+    {
+      "id": "ord_12",
+      "consecutivo": "OS-2026-0012",
+      "clienteId": "cli_5",
+      "equipoId": "eq_7",
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Entregado",
+      "diagnostico": "Mantenimiento preventivo de seguimiento.",
+      "fechaIngreso": "2026-11-14",
+      "fechaEntrega": "2026-11-15",
+      "tecnico": "Técnico de soporte",
+      "repuestos": [
+        {
+          "repuestoId": "rep_5",
+          "cantidad": 1,
+          "precioUnit": 35000
+        }
+      ],
+      "manoObra": 90000,
+      "descuento": 0,
+      "checklist": {
+        "Limpieza interna con aire comprimido": true,
+        "Cambio de pasta térmica del procesador": true,
+        "Revisión de ventiladores y disipadores": true,
+        "Diagnóstico S.M.A.R.T. del disco (CrystalDiskInfo)": true,
+        "Prueba de memoria RAM (MemTest86)": true,
+        "Monitoreo de temperaturas (HWMonitor)": true,
+        "Actualización del sistema operativo y controladores": true,
+        "Análisis antivirus / antimalware": true,
+        "Limpieza de archivos temporales y programas de inicio": true,
+        "Verificación de copia de seguridad del cliente": true
+      },
+      "garantiaDias": 30,
+      "observaciones": "Equipo entregado funcionando. Se recomienda mantenimiento preventivo cada 6 meses.",
+      "creado": "2026-11-14T09:00:00.000Z",
+      "totales": {
+        "repuestos": 35000,
+        "manoObra": 90000,
+        "subtotal": 125000,
+        "descuento": 0,
+        "base": 125000,
+        "iva": 23750,
+        "total": 148750
+      }
+    },
+    {
+      "id": "ord_13",
+      "consecutivo": "OS-2026-0013",
+      "clienteId": "cli_3",
+      "equipoId": "eq_4",
+      "tipoServicio": "Diagnóstico de hardware",
+      "estado": "En reparación",
+      "diagnostico": "Ruido anormal en ventilador del procesador.",
+      "fechaIngreso": "2026-11-17",
+      "fechaEntrega": null,
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_6",
+          "cantidad": 1,
+          "precioUnit": 60000
+        }
+      ],
+      "manoObra": 40000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "",
+      "creado": "2026-11-17T09:00:00.000Z",
+      "totales": {
+        "repuestos": 60000,
+        "manoObra": 40000,
+        "subtotal": 100000,
+        "descuento": 0,
+        "base": 100000,
+        "iva": 19000,
+        "total": 119000
+      }
+    },
+    {
+      "id": "ord_14",
+      "consecutivo": "OS-2026-0014",
+      "clienteId": "cli_7",
+      "equipoId": "eq_9",
+      "tipoServicio": "Optimización de sistema operativo",
+      "estado": "En diagnóstico",
+      "diagnostico": "Cliente reporta lentitud general y bloqueos.",
+      "fechaIngreso": "2026-11-18",
+      "fechaEntrega": null,
+      "tecnico": "Andrés Galvis",
+      "repuestos": [],
+      "manoObra": 70000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "",
+      "creado": "2026-11-18T09:00:00.000Z",
+      "totales": {
+        "repuestos": 0,
+        "manoObra": 70000,
+        "subtotal": 70000,
+        "descuento": 0,
+        "base": 70000,
+        "iva": 13300,
+        "total": 83300
+      }
+    },
+    {
+      "id": "ord_15",
+      "consecutivo": "OS-2026-0015",
+      "clienteId": "cli_6",
+      "equipoId": "eq_8",
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Recibido",
+      "diagnostico": "Ingreso para mantenimiento preventivo programado.",
+      "fechaIngreso": "2026-11-19",
+      "fechaEntrega": null,
+      "tecnico": "Técnico de soporte",
+      "repuestos": [],
+      "manoObra": 90000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "",
+      "creado": "2026-11-19T09:00:00.000Z",
+      "totales": {
+        "repuestos": 0,
+        "manoObra": 90000,
+        "subtotal": 90000,
+        "descuento": 0,
+        "base": 90000,
+        "iva": 17100,
+        "total": 107100
+      }
+    },
+    {
+      "id": "ord_16",
+      "consecutivo": "OS-2026-0016",
+      "clienteId": "cli_4",
+      "equipoId": "eq_6",
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Listo para entrega",
+      "diagnostico": "Ampliación de memoria a 16 GB solicitada por el cliente.",
+      "fechaIngreso": "2026-11-16",
+      "fechaEntrega": null,
+      "tecnico": "Andrés Galvis",
+      "repuestos": [
+        {
+          "repuestoId": "rep_4",
+          "cantidad": 1,
+          "precioUnit": 135000
+        }
+      ],
+      "manoObra": 120000,
+      "descuento": 0,
+      "checklist": {},
+      "garantiaDias": 30,
+      "observaciones": "",
+      "creado": "2026-11-16T09:00:00.000Z",
+      "totales": {
+        "repuestos": 135000,
+        "manoObra": 120000,
+        "subtotal": 255000,
+        "descuento": 0,
+        "base": 255000,
+        "iva": 48450,
+        "total": 303450
+      }
+    }
+  ],
+  "citas": [
+    {
+      "id": "cit_1",
+      "clienteId": "cli_2",
+      "equipoId": "eq_3",
+      "fecha": "2026-11-20",
+      "hora": "09:00",
+      "duracion": 60,
+      "tipoServicio": "Diagnóstico de hardware",
+      "estado": "Confirmada",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_2",
+      "clienteId": "cli_5",
+      "equipoId": "eq_7",
+      "fecha": "2026-11-20",
+      "hora": "14:00",
+      "duracion": 120,
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Programada",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_3",
+      "clienteId": "cli_1",
+      "equipoId": "eq_1",
+      "fecha": "2026-11-21",
+      "hora": "10:00",
+      "duracion": 120,
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Programada",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_4",
+      "clienteId": "cli_8",
+      "equipoId": "eq_10",
+      "fecha": "2026-11-23",
+      "hora": "08:30",
+      "duracion": 90,
+      "tipoServicio": "Optimización de sistema operativo",
+      "estado": "Programada",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_5",
+      "clienteId": "cli_3",
+      "equipoId": "eq_5",
+      "fecha": "2026-11-23",
+      "hora": "15:00",
+      "duracion": 120,
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Confirmada",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_6",
+      "clienteId": "cli_6",
+      "equipoId": "eq_8",
+      "fecha": "2026-11-19",
+      "hora": "11:00",
+      "duracion": 60,
+      "tipoServicio": "Mantenimiento preventivo",
+      "estado": "Atendida",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    },
+    {
+      "id": "cit_7",
+      "clienteId": "cli_4",
+      "equipoId": "eq_6",
+      "fecha": "2026-11-16",
+      "hora": "16:00",
+      "duracion": 60,
+      "tipoServicio": "Mantenimiento correctivo",
+      "estado": "Atendida",
+      "tecnico": "Andrés Galvis",
+      "notas": ""
+    }
+  ],
+  "bitacora": [],
+  "config": {
+    "empresa": "ALT+F4 Mantenimiento y Soporte Técnico Informático",
+    "nit": "1.090.000.000-0 (simulado)",
+    "telefono": "310 000 0000",
+    "direccion": "Cúcuta, Norte de Santander",
+    "email": "contacto@altf4.co",
+    "periodoPreventivoMeses": 6,
+    "garantiaDias": 30
+  }
+}
