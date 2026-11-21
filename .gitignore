@@ -4,5 +4,4 @@ Thumbs.db
 *.log
 .env
 .vscode/
-.claude/
 ~$*
