@@ -1,0 +1,14 @@
+{
+  "name": "altf4-gestion",
+  "version": "1.0.0",
+  "description": "Prototipo funcional (TRL 5) del sistema de gestión operativa ALT+F4: citas, clientes, equipos, órdenes de servicio, inventario y reportes.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/server.js",
+    "test": "node --test tests/"
+  },
+  "engines": { "node": ">=20" },
+  "author": "Andrés Mauricio Galvis Gutiérrez",
+  "license": "MIT"
+}
