@@ -1,0 +1,25 @@
+flowchart TB
+  U(["Técnico / Administrador — navegador web en PC, tablet o celular"])
+  subgraph P["1. Capa de presentación — HTML5 + CSS3 responsivo"]
+    direction LR
+    R["Enrutador SPA por hash<br/>app.js"] --> V["Vistas modulares<br/>Tablero · Citas · Órdenes · Clientes<br/>Equipos · Inventario · Reportes · Configuración"]
+    V --> UI["Componentes UI — ui.js<br/>modales · validación · notificaciones"]
+    V --> DOC["Documentos imprimibles<br/>informe técnico · cotización"]
+  end
+  subgraph N["2. Capa de lógica de negocio — JavaScript ES Modules"]
+    L["logic.js<br/>validaciones · cruce de citas · totales e IVA 19 %<br/>inventario · flujo de estados · indicadores"]
+  end
+  subgraph D["3. Capa de acceso a datos — patrón Repository"]
+    direction LR
+    S["store.js<br/>CRUD genérico · bitácora · respaldo JSON"] --> LS[("localStorage<br/>colecciones JSON")]
+    S -. evolución .-> API[("API REST + BD relacional<br/>PostgreSQL / MySQL")]
+  end
+  subgraph Q["Calidad y despliegue"]
+    direction LR
+    T["Pruebas automatizadas<br/>node --test · 38 casos"]
+    GH["GitHub — control de versiones<br/>GitHub Pages — despliegue"]
+  end
+  U --> P
+  P --> N
+  N --> D
+  D ~~~ Q

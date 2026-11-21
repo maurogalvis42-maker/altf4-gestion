@@ -1,0 +1,24 @@
+sequenceDiagram
+  autonumber
+  actor T as Técnico
+  participant V as Vista Orden (ordenes.js)
+  participant L as Lógica (logic.js)
+  participant S as Repositorio (store.js)
+  participant DB as localStorage
+  T->>V: Selecciona repuesto y cantidad
+  V->>S: todos('repuestos')
+  S->>DB: getItem('altf4.v1.repuestos')
+  DB-->>S: inventario JSON
+  V->>L: descontarInventario(inventario, item)
+  alt stock suficiente
+    L-->>V: inventario actualizado
+    V->>S: reemplazar('repuestos', inventario)
+    V->>L: calcularTotales(orden)
+    L-->>V: subtotal, IVA 19 %, total
+    V->>S: actualizar('ordenes', id, cambios)
+    S->>DB: setItem + registro en bitácora
+    V-->>T: "Repuesto agregado. Stock restante: n"
+  else stock insuficiente
+    L-->>V: Error "Stock insuficiente"
+    V-->>T: Notificación de error (sin cambios)
+  end

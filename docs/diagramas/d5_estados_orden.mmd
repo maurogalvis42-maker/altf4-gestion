@@ -1,0 +1,10 @@
+stateDiagram-v2
+  [*] --> Recibido: Crear orden
+  Recibido --> EnDiagnostico: Avanzar
+  EnDiagnostico --> EnReparacion: Diagnóstico registrado
+  EnReparacion --> ListoParaEntrega: Repuestos y costos registrados
+  ListoParaEntrega --> Entregado: Checklist 100 % (preventivo) y confirmación de pago
+  Entregado --> [*]: Orden cerrada (solo lectura)
+  EnDiagnostico: En diagnóstico
+  EnReparacion: En reparación
+  ListoParaEntrega: Listo para entrega

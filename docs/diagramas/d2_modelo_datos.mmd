@@ -1,0 +1,98 @@
+erDiagram
+  USUARIO ||--o{ ORDEN_SERVICIO : "atiende"
+  USUARIO ||--o{ CITA : "tiene asignada"
+  CLIENTE ||--o{ EQUIPO : "posee"
+  CLIENTE ||--o{ CITA : "agenda"
+  CLIENTE ||--o{ ORDEN_SERVICIO : "solicita"
+  EQUIPO ||--o{ ORDEN_SERVICIO : "recibe"
+  CITA |o--o| ORDEN_SERVICIO : "origina"
+  SERVICIO ||--o{ ORDEN_SERVICIO : "clasifica"
+  ORDEN_SERVICIO ||--o{ DETALLE_REPUESTO : "incluye"
+  REPUESTO ||--o{ DETALLE_REPUESTO : "se usa en"
+  USUARIO ||--o{ BITACORA : "registra"
+  USUARIO {
+    string id PK
+    string email UK
+    string nombre
+    string rol
+    string hash
+    boolean activo
+  }
+  CLIENTE {
+    string id PK
+    string tipo
+    string nombre
+    string documento UK
+    string telefono
+    string email
+    string direccion
+    boolean consentimiento
+    date fechaConsentimiento
+  }
+  EQUIPO {
+    string id PK
+    string clienteId FK
+    string tipo
+    string marca
+    string modelo
+    string serial UK
+    string so
+    string ram
+    string almacenamiento
+  }
+  CITA {
+    string id PK
+    string clienteId FK
+    string equipoId FK
+    date fecha
+    time hora
+    int duracion
+    string tipoServicio
+    string tecnico
+    string estado
+  }
+  ORDEN_SERVICIO {
+    string id PK
+    string consecutivo UK
+    string clienteId FK
+    string equipoId FK
+    string citaId FK
+    string tipoServicio
+    string estado
+    text diagnostico
+    json checklist
+    decimal manoObra
+    decimal descuento
+    json totales
+    date fechaIngreso
+    date fechaEntrega
+  }
+  DETALLE_REPUESTO {
+    string repuestoId FK
+    int cantidad
+    decimal precioUnit
+  }
+  REPUESTO {
+    string id PK
+    string codigo UK
+    string nombre
+    string categoria
+    int stock
+    int stockMinimo
+    decimal costo
+    decimal precioVenta
+    string proveedor
+  }
+  SERVICIO {
+    string id PK
+    string nombre
+    decimal tarifa
+    int duracion
+  }
+  BITACORA {
+    string id PK
+    datetime fecha
+    string usuario
+    string accion
+    string coleccion
+  }

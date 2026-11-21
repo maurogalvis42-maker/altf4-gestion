@@ -1,0 +1,22 @@
+flowchart LR
+  ADM(["Administrador"])
+  TEC(["Técnico"])
+  CLI(["Cliente<br/>(actor externo)"])
+  subgraph SIS["Sistema ALT+F4 Gestión"]
+    UC1(["CU-01 Iniciar sesión"])
+    UC2(["CU-02 Gestionar clientes"])
+    UC3(["CU-03 Gestionar equipos"])
+    UC4(["CU-04 Agendar citas"])
+    UC5(["CU-05 Registrar orden de servicio"])
+    UC6(["CU-06 Ejecutar checklist preventivo"])
+    UC7(["CU-07 Registrar repuestos usados"])
+    UC8(["CU-08 Generar informe / cotización"])
+    UC9(["CU-09 Gestionar inventario"])
+    UC10(["CU-10 Consultar reportes"])
+    UC11(["CU-11 Configurar tarifas y respaldo"])
+  end
+  TEC --- UC1 & UC2 & UC3 & UC4 & UC5 & UC6 & UC7 & UC8 & UC9 & UC10
+  ADM --- UC11
+  ADM -. hereda funciones del técnico .-> TEC
+  CLI -. solicita servicio .-> UC4
+  CLI -. recibe documento .-> UC8

@@ -1,0 +1,26 @@
+flowchart LR
+  A["Inicio de sesión"] -->|credenciales válidas| B["Tablero de control"]
+  B --> C["Agenda de citas"]
+  B --> D["Órdenes de servicio"]
+  B --> E["Clientes"]
+  B --> F["Equipos"]
+  B --> G["Inventario"]
+  B --> H["Reportes"]
+  B --> I["Configuración<br/>(solo Administrador)"]
+  C --> C1["Agendar / editar cita"]
+  C --> C2["Atender cita"] --> D1
+  D --> D1["Nueva orden"]
+  D --> D2["Detalle de orden"]
+  D1 --> D2
+  D2 --> D3["Checklist preventivo"]
+  D2 --> D4["Repuestos y costos"]
+  D2 --> D5["Informe técnico (PDF)"]
+  D2 --> D6["Cotización (PDF)"]
+  E --> E1["Nuevo / editar cliente"]
+  E --> E2["Historial del cliente"] --> D2
+  F --> F1["Nuevo / editar equipo"]
+  G --> G1["Nuevo repuesto"]
+  G --> G2["Entrada de inventario"]
+  H --> H1["Exportar CSV / imprimir"]
+  I --> I1["Tarifas · Respaldo · Bitácora"]
+  B -->|cerrar sesión| A
