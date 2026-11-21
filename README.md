@@ -17,7 +17,7 @@ Sistematizar la operación del servicio técnico de ALT+F4 (agenda, clientes, ho
 
 ## Demostración
 
-- **URL del prototipo (GitHub Pages):** `https://TU_USUARIO.github.io/altf4-gestion/`
+- **URL del prototipo (GitHub Pages):** `https://maurogalvis42-maker.github.io/altf4-gestion/`
 - **Credenciales de prueba (datos simulados):**
 
 | Rol | Correo | Contraseña |
@@ -85,7 +85,7 @@ Abrir la URL de GitHub Pages e ingresar con las credenciales de prueba.
 ### Opción 2: en local (requiere Node.js 20 o superior)
 
 ```bash
-git clone https://github.com/TU_USUARIO/altf4-gestion.git
+git clone https://github.com/maurogalvis42-maker/altf4-gestion.git
 cd altf4-gestion
 npm start          # abre http://localhost:5173
 npm test           # ejecuta las 38 pruebas automatizadas
